@@ -8,6 +8,8 @@ export default function App() {
   const [loading, setisLoading] = useState(true);
   if (spinner) {
     setTimeout(() => {
+      spinner.style.display = "none";
+
       setisLoading(false);
     }, 5000);
   }

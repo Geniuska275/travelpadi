@@ -54,7 +54,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1, backgroundColor: "black" }}>
-      <AppBar position="sticky">
+      <AppBar
+        position="sticky"
+        sx={{ backgroundColor: "rgba(244,245,255,0.3)" }}
+      >
         <Toolbar>
           <IconButton
             size="large"
@@ -73,7 +76,7 @@ export default function Header() {
           >
             TRAVELPADI.
           </Typography>
-          <Typography variant="p" sx={{ color: "white", fontWeight: "400" }}>
+          <Typography variant="p" sx={{ display: { xs: "none", sm: "block" } }}>
             Explore more places
           </Typography>
           <Search>
